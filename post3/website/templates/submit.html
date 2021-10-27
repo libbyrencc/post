@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Submit a File{% endblock %}</h1>
+  <h1>{% block title %}Submit{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -11,6 +11,13 @@
       <input type="submit" value="Submit form">
   </form>
 
+  <form method="post" enctype="multipart/form-data">
+    <label for="message">Your message</label><br>
+    <input type="text" name="message">
+    <label for="name">Your name or handle: </label><br>
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
   {% if thanks %}
     Thanks for submitting a file!
   {% endif %}
