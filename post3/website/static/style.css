@@ -61,5 +61,10 @@ nav ul li a {
 }
 .cr{
     color: rgb(255, 153, 0);
-    background: #cae6f6;
+    
+}
+img {
+
+    object-fit: cover;
+
 }
