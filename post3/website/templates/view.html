@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block content %}
-<ul>
+<ul class="cr">
     {% for message in messages %}
-      <li>{{ message[1]|e }}</li>
-      <i>--{{ message[0]|e }}</i>
+      <div class="cr"><li>{{ message[1]|e }}</li>
+      <i>--{{ message[0]|e }}</i></div>
     {% endfor %}
 </ul>
 {% endblock %}

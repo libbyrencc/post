@@ -15,8 +15,6 @@ app = Flask(__name__)
 def main():
     return render_template('main_better.html')
 
-# Show url matching
-
 @app.route('/submit-basic/', methods=['POST', 'GET'])
 def submit_basic():
     if request.method == 'GET':
